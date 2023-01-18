@@ -1,4 +1,4 @@
-![DFT-VASP WaNo logo](https://raw.githubusercontent.com/KIT-Workflows/DFT-VASP/main/DFT-VASP.png)
+![DFT-VASP WaNo logo](https://raw.githubusercontent.com/KIT-Workflows/Graphite/main/graphite_logo.png)
 
 When publishing results obtained with Graphite **WaNo**, please consider citing it.
 
