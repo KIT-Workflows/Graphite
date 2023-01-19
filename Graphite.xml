@@ -1,0 +1,39 @@
+<WaNoTemplate>
+    
+    <WaNoMeta>
+ 		<Author>
+  			<Name> Celso R. C. Rego </Name>
+  			<Email>celsorego@kit.edu</Email>
+ 		</Author>
+
+		<Description>
+   			This WaNo builds a Graphite structure in the 
+			sequence –AB– stacking spacegroup=194=P63/mmc. The POSCAR file is the expected output.
+
+			Tecnologies: ASE   
+ 		</Description>
+
+ 		<Keyword>Graphite</Keyword>
+ 		<Keyword>POSCAR</Keyword>
+	</WaNoMeta>
+	
+	<WaNoRoot name="Graphite">
+		<WaNoFloat name="a" description="Intralayer lattice parameter in (A)">2.0</WaNoFloat>
+		<WaNoFloat name="c" description="Interlayer lattice parameter in (A)">6.8</WaNoFloat>
+	</WaNoRoot>
+	
+	<WaNoExecCommand>
+		export NANOVER=V4
+		source $NANOMATCH/$NANOVER/local_anaconda/bin/activate
+		conda activate simstack_kit
+		python graphite.py
+	</WaNoExecCommand>
+	
+	<WaNoInputFiles>
+		<WaNoInputFile logical_filename="graphite.py">graphite.py</WaNoInputFile>
+	</WaNoInputFiles>
+	<WaNoOutputFiles>
+		<WaNoOutputFile>POSCAR</WaNoOutputFile>
+		<WaNoOutputFile>graphite_results.yml</WaNoOutputFile>
+	</WaNoOutputFiles>
+</WaNoTemplate>
